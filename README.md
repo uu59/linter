@@ -9,3 +9,8 @@ Very roughly Continuous Linter
 5. https://github.com/uu59test/foobar/pull/2
 
 Prepare to access to GitHub repo by SSH key (deploy key).
+
+Or using Docker.
+
+1. `docker build -t linter .`
+2. `./start.bash`
