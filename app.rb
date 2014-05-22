@@ -4,6 +4,8 @@ require "bundler"
 Bundler.require(:default, :development)
 require "json"
 
+set :bind, "0.0.0.0"
+
 post "*" do
   payload = JSON.parse(request.body.read)
   branch = payload["pull_request"]["head"]["ref"]
